@@ -5,7 +5,7 @@
 </head>
 <body>
     
-
+<form>
 
     <section>
         <h2>Inscription</h2>
@@ -13,19 +13,26 @@
             
             <div>
                 <label for="First name "> First name  :</label>
-                <input type="text" id="First name " name="First name " minlength="4" minlength="20" >
+                <input type="text" required >
             </div>
+              
+            <div>
+                <label > date of birth :</label>
+                <input type="date" required >
+            </div>
+
 
             <!-- Champ Prenom -->
             <div>
                 <label for="Last name ">  Last name   :</label>
-                <input type="text" id="Last name " name="Last name " minlength="4" minlength="20">
+                <input type="text"  required >
             </div>
-            <!-- Champ adress-->
+           
+            
             <div>
                
                 <label for="Adress ">  Adress  :</label>
-                <input type="text" id="Adress " name="Adress " minlength="4" minlength="100">
+                <input type="text" >
             </div>
 
             <!-- Champ Telephone -->
@@ -33,6 +40,7 @@
                 <label for="Phone number"> Phone number  :</label>
                 <input type="Phone number" id="Phone number" name="Phone number" required pattern="[0-9]+">
             </div>
+            
             
 
             <!-- Champ Email -->
@@ -46,6 +54,12 @@
                 <label for="motdepasse">Mot de passe :</label>
                 <input type="password" id="motdepasse" name="motdepasse" required pattern="^(?=.*\d)(?=.*[a-z])(?=.*[A-Z])(?=.*\W).*$">
             </div>
+            <div>
+                <label > button </label>
+                <input type="button"  value = "ok ">
+            </div>
+
+        </form>
 
             <button type="submit">submit</button>
             <button type="submit">Reset</button>
